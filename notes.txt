@@ -1,0 +1,1 @@
+the index.html have text/clss instead of text/css
