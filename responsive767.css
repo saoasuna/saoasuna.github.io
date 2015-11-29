@@ -1,0 +1,104 @@
+#prev {
+    display:none;
+}
+#next {
+    display:none;
+}
+
+#prev2 {
+    display:none;
+}
+#next2 {
+    display:none;
+}
+
+body {
+    color:blue;
+}
+
+
+
+#gallery {
+    display:block;
+    width: 300px;
+
+   
+}
+
+
+#gallery2{
+    left:8px;
+}
+
+#picture_2{
+    display:none;
+}
+
+
+
+#flexcontainer1 {
+    display: -webkit-flex;
+        -webkit-flex-direction:column;
+
+        display:flex;
+        flex-direction:column;
+        -webkit-align-items:center;
+        align-items:center;
+        -webkit-justify-content: center;
+        justify-content: center;
+}
+
+#flexcontainer3-1500 {
+    display: -webkit-flex;
+        -webkit-flex-direction:column;
+
+        display:flex;
+        flex-direction:column;
+        -webkit-align-items:center;
+        align-items:center;
+        -webkit-justify-content: center;
+        justify-content: center;
+}
+
+#gallery3 {
+    
+    display:block;
+    left:0px;
+    padding-bottom:30px;
+    padding-right:0px;
+}
+
+#image_grabber_alltext {
+    display:none;
+}
+    
+#image_grabber_alltext2 {
+        display:inline-block;
+}
+#image_grabber_textbox2 {
+        width:400px;
+}
+#image_description2{
+        
+}
+
+#picture_and_gallery{
+        height:450px;
+		
+	}
+#mapleplay {
+    top:300px;   
+}
+
+#container3 {
+    width:380px;
+    height: 250px;
+    
+}
+
+#mapleplay_textbox { /* both the description and text*/
+            width:400px;
+    }
+
+#doodlejump_textbox { /* both the description and text*/
+            width:400px;}

@@ -1,0 +1,36 @@
+body {
+    color:green;
+}
+
+#gallery {
+    width:512px;
+    left:100px;
+}
+#assignment_alltext {
+    
+}
+
+#image_grabber {
+    top:40px;
+}
+
+#picture_2{
+    display:none;
+}
+#flexcontainer3-1500 {
+    display: -webkit-flex;
+        -webkit-flex-direction:column;
+
+        display:flex;
+        flex-direction:column;
+        -webkit-align-items:center;
+        align-items:center;
+        -webkit-justify-content: center;
+        justify-content: center;
+}
+
+#gallery3 {
+    display:block;
+    left:70px;
+    padding-bottom:30px;
+}
