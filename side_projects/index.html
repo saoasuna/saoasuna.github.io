@@ -8,7 +8,8 @@
 <link rel="stylesheet" type="text/css" href="styles.css"/>
 <style type="text/css">
     * {
-
+        margin: 0;
+        padding: 0;
     }
 	
 	
@@ -27,7 +28,7 @@ ________________________________________________________________________________
 	
 	#gallery {
         display:inline-block;
-        height:512px;
+        height:650px;
         width:512px;
 		/*margin-left: auto;
         margin-right:auto;*/
@@ -41,8 +42,8 @@ ________________________________________________________________________________
     #container {
         width: 288px;
         height: 512px;
-        top: 93px;
-		left:23px;
+        top: 48px;
+		left:14px;
         position: absolute;
         overflow: hidden;
         background: rgb(255, 255, 255);
@@ -87,8 +88,6 @@ ________________________________________________________________________________
 		width: 315px;
 		height: 620px;
 		position: absolute;
-		left:10px;
-		top: 50px;
 	}
 	
     #prev {
@@ -96,7 +95,7 @@ ________________________________________________________________________________
         height: 120px;
         width: 120px;
 		left: -145px;
-        top:275px;
+        top:240px;
 		
         position: absolute;
         margin: auto 10px;
@@ -106,8 +105,8 @@ ________________________________________________________________________________
 		 display: inline;
         height: 120px;
         width: 120px;
-        left: 330px;
-		top: 270px;
+        left: 320px;
+		top: 240px;
         position: absolute;
         margin: auto 10px;
 		z-index: 3000;
@@ -119,13 +118,15 @@ ________________________________________________________________________________
     
     #assignment_tracker{
         text-align: center;
+        
+        height:100%;
         width: 100%;
-		height: 800px;
 	}
     
     #assignment_alltext {
         display:inline-block;
-        height: 512px;
+        
+        height: 400px;
     }
     
 	#assignment_tracker_text {
@@ -140,6 +141,19 @@ ________________________________________________________________________________
          margin-left: auto;
         margin-right: auto;
     }
+    
+    #flexcontainer1 {
+        display: -webkit-flex;
+        -webkit-flex-direction:row;
+        
+        display:flex;
+        flex-direction:row;
+        -webkit-align-items:center;
+        align-items:center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        
+    }
 	/*_________________________________________________________
 ___________________________________________________________________*/
     
@@ -147,26 +161,23 @@ ___________________________________________________________________*/
 _____________________________________________________________________*/
     
     #gallery2 {
-        position:absolute;
-        top: 50px;
+        
         display:inline-block;
-		/*margin-left: auto;
-        margin-right:auto;*/
+        position:relative;
+        height: 435px;
+        width: 385px;
+
 		
 	}
 	
 	/* SLIDING IMAGE GALLERY _______________________________________*/
 	
-    #outline2 {
-        position:absolute;
-        width: 600px;
-    }
     
     #container2 {
         width: 203px;
         height: 360px;
-        top: 84px;
-		left:68px;
+        top: 33px;
+		left:55px;
         position: absolute;
         overflow: hidden;
         background: rgb(255, 255, 255);
@@ -211,8 +222,6 @@ _____________________________________________________________________*/
 		width: 315px;
 		height: 620px;
 		position: absolute;
-		left:10px;
-		top: 50px;
 	}
 	
     #prev2 {
@@ -220,7 +229,7 @@ _____________________________________________________________________*/
         height: 120px;
         width: 120px;
 		left: -85px;
-        top:205px;
+        top:150px;
 		
         position: absolute;
         margin: auto 10px;
@@ -230,8 +239,8 @@ _____________________________________________________________________*/
 		 display: inline;
         height: 120px;
         width: 120px;
-		left: 280px;
-		top: 200px;
+		left: 260px;
+		top: 150px;
         position: absolute;
         margin: auto 10px;
 		z-index: 3000;
@@ -248,37 +257,29 @@ _____________________________________________________________________*/
         width: 100%;
 		height: 650px;
 	}
-    
-        #image_grabber_textbox { /* both the description and text*/
+    #image_grabber_alltext {
+		display:inline-block;
+	}
+    #image_grabber_textbox { /* both the description and text*/
             width: 500px;
-            margin: 0 auto; /* cannot text align divs to center them"*/
-            padding-right:700px;
-            padding-top:90px;
-            
     }
     
-    
-    #image_grabber_text {
-		
-	}
-	
     #image_description {
-        padding-bottom: 40px;
     }
     
     /* BATCH PICTURE */
-	#picture+gallery{
-        position:absolute;
-        top:0;
+	#picture_and_gallery{
+        position:relative;
+        padding-left:100px;
 		display:inline-block;
 		
 	}
 	
     #picture_2 {
-		display:inline;
-        position:absolute;
-        top: 110px;
-        padding-left: 400px;
+        width: 491px;
+        height: 435px;
+		display:inline-block;
+        position:relative;
     }
     
     /* THIRD ITEM _________________________________________________________________________________________
@@ -288,22 +289,13 @@ ________________________________________________________________________________
 	#gallery3 {
         display:inline-block;
         position:relative;
-        padding-top: 60px;
-        right:100px;
-        
-        width: 665px;
+        padding-right:100px;
         
 
 	}
 	
 	/* SLIDING IMAGE GALLERY _______________________________________*/
 	
-    #outline3 {
-        
-        display:inline-block;
-        position:relative;
-
-    }
     
     #container3 {
         
@@ -353,25 +345,23 @@ ________________________________________________________________________________
 	
     /* TEXT FOR MAPLE_PLAY */
     #mapleplay{
-        margin: 0 auto;
         text-align: center;
         width: 100%;
 		height: 650px;
 	}
     
+    #mapleplay_alltext {
+        
+    }
+    
         #mapleplay_textbox { /* both the description and text*/
             position:relative;
             display:inline-block;
             width: 500px;
-            right:60px;
-           
-           bottom:70px;
-            
     }
     
 	
     #maple_description {
-        padding-bottom: 40px;
     }
     
     /* DOODLE JUMP ____________________________________________________________________________________
@@ -383,18 +373,17 @@ ________________________________________________________________________________
 		height: 650px;
 	}
     
+    #doodlejump_alltext{
+        
+    }
+    
         #doodlejump_textbox { /* both the description and text*/
             position:relative;
             display:inline-block;
-            width: 500px;
-            padding-top:40px;
-           
-            
-    }
+            width: 500px;   }
     
 	
     #doodle_description {
-        padding-bottom: 40px;
     }
     </style>
 </head>
@@ -418,9 +407,9 @@ ________________________________________________________________________________
 
 <!--side project 1, assignment tracker---------------------------------------------->
 <div id="assignment_tracker"> <!-- CENTERS EVERYTHING-->
-<h1 class="project_titles">Assignment Tracker
+<h1 class="project_titles">Assignment Tracker<br><br>
 </h1>
-
+<div id="flexcontainer1">
 <div id="gallery">
     
     <img id="prev" src="img/prev1.svg"/>
@@ -458,24 +447,23 @@ ________________________________________________________________________________
 <p><br>Assignment Tracker is an Android application that helps you stay on top of your work. Assignments are displayed using a RecyclerView and stored inside an SQLLiteDatabase. An AVL tree implementation offers quick sorting and allows checks for deadline conflicts. Users are able to share assignment files with one another over Wi-fi through Google’s Cloud Messaging API and Java Servlets. Notifications are pushed by the app whenever deadlines are approaching or another user is trying to share a file.<br><br>Java, SQL, XML, JSON<br>September 2015 - November 2015, personal project<br><br><a href="https://github.com/saoasuna/AssignmentTracker">View Code on Github</a></p>
 </div>
   </div>
+    </div>
 </div>
 <!--side project 2------------------------------------------------------------------------>
-    <div id="image_grabber">
-        <h1 class="project_titles">Image Grabber
+<div id="image_grabber">
+        <h1 class="project_titles">Image Grabber<br><br>
 </h1>
-    <div id="image_grabber_textbox">
+    <div id="flexcontainer1">
+    <div id="image_grabber_alltext">
         <div  id="image_description">
             <h2 class = "project_descriptions">fluid image viewing</h2></div>
-   <div id="image_grabber_text">
-<p>Image Grabber is an Android application that fetches and displays photos in a smooth, scrollable view. The app connects to Flickr and Booru imageboards using their respective API’s and downloads images according to the SearchView. It compares each photo’s resolution to the device’s screensize to determine the best display size of each picture. The AsyncTask class is used to download images in a background thread and update the UI when available. There is also a desktop script written in Ruby (using the Nokogiri gem) that allows users to batch download these pictures.<br><br>Java, Ruby, Nokogiri, SQL, XML, JSON<br>October 2015 - November 2015, personal project<br><br><a href="https://github.com/saoasuna/Image-Grabber">View Code on Github</a></p>
+   <div id="image_grabber_textbox">
+<p><br>Image Grabber is an Android application that fetches and displays photos in a smooth, scrollable view. The app connects to Flickr and Booru imageboards using their respective API’s and downloads images according to the SearchView. It compares each photo’s resolution to the device’s screensize to determine the best display size of each picture. The AsyncTask class is used to download images in a background thread and update the UI when available. There is also a desktop script written in Ruby (using the Nokogiri gem) that allows users to batch download these pictures.<br><br>Java, Ruby, Nokogiri, SQL, XML, JSON<br>October 2015 - November 2015, personal project<br><br><a href="https://github.com/saoasuna/Image-Grabber">View Code on Github</a></p>
              </div>
     </div>
-        <div id="picture_2">
-        <img id="batch" src="img/batch435.png"></div>
-<div id="picture+gallery">
-
-<div id="gallery2">
-     <div id="outline2">
+    <div id="picture_and_gallery">
+    
+    <div id="gallery2">
     
     <img id="prev2" src="img/prev1.svg"/>
 <div id="frame2">
@@ -502,19 +490,21 @@ ________________________________________________________________________________
     </div    
 
 ></div>
+        <div id="picture_2">
+        <img src="img/batch435.png"></div>
 
+       </div>
     </div>
-</div>
-       
+        
+        
      </div>
 <!--side project 3------------------------------------------------------------------------------------------------>
 <div id="mapleplay">
-<h1 class="project_titles">MaplePlay
+<h1 class="project_titles">MaplePlay<br><br>
 </h1>
     
-    
+<div id="flexcontainer1">  
 <div id="gallery3">
-    <div id="outline3">
     
         <div id="container3">
     <div id="slideshow3" class="cycle-slideshow"
@@ -532,10 +522,9 @@ ________________________________________________________________________________
     
     <div id="pager3"></div>
     </div>
-    </div>
-    <!-- -->
 
 </div>    
+    <div id="mapleplay_alltext">
     <div id="mapleplay_textbox">
         <div  id="maple_description">
             <h2 class = "project_descriptions">for the days with too much work</h2></div>
@@ -543,17 +532,20 @@ ________________________________________________________________________________
 <p>MaplePlay is a collection of scripts that play for you in the online game, Maplestory.  They are run in conjunction with a dll injector called hInjector, which supplies game information to the scripts. For example, hInjector can give the coordinates of an item on the map, and the scripts can be used to guide the character to those coordinates using the shortest possible path. This is achieved by converting the map data into a graph and implementing Dijkstra’s algorithm. Other features include training and searching for lowest market prices. Commands are sent using AutoIt.<br><br>C++, Java, AutoIt<br>June 2013 - June 2014, personal project<br><br><a href="https://github.com/saoasuna/MaplePlay">View Code on Github</a>
 </p>
 </div>
-</div>
+    </div>
+    </div>
+    <br><br>
 <!--side project 4-->
 <div id="doodlejump">
-<h1 class="project_titles">DoodleJump Clone
+<h1 class="project_titles">DoodleJump Clone<br><br>
 </h1>
-    
+    <div id="doodlejump_alltext">
     <div id="doodlejump_textbox">
         <div  id="doodle_description">
             <h2 class = "project_descriptions">and a little hardware...</h2></div>
-<p>Doodlejump Clone is an imitation of the popular mobile platforming game, built using the Tiva C Launchpad (microcontroller kit) and Orbit Booster Pack. Much like the original game, the character sprite is controlled through accelerometer input. The graphics are constantly being updated on the Orbit Booster Pack’s OLED screen, and high scores are saved to the EEPROM. A morse code translator has also been implemented through using UART and PuTTY. The onboard lights can be controlled with the potentiometer.<br><br>C, C++<br>September 2015 - December 2015, school group project<br><br><a href="https://github.com/saoasuna/DoodleJump-Clone">View Code on Github</a>
+<p><br>Doodlejump Clone is an imitation of the popular mobile platforming game, built using the Tiva C Launchpad (microcontroller kit) and Orbit Booster Pack. Much like the original game, the character sprite is controlled through accelerometer input. The graphics are constantly being updated on the Orbit Booster Pack’s OLED screen, and high scores are saved to the EEPROM. A morse code translator has also been implemented through using UART and PuTTY. The onboard lights can be controlled with the potentiometer.<br><br>C, C++<br>September 2015 - December 2015, school group project<br><br><a href="https://github.com/saoasuna/DoodleJump-Clone">View Code on Github</a>
 </p>
+</div>
 </div>
 </div>
 </body>
