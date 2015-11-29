@@ -18,16 +18,12 @@
 		position:relative;
 		padding-top:10px;
 		padding-right:5px;
+        font-size:18px;
 		text-align: right;
 		font-size:18px;
 	}
-    /*
-	div.text_cont{
-		padding-left: 100px;
-		padding-top:30px;
-		padding-right:30px;
-		
-	}*/
+    /* FIRST ITEM__________________________________________________________________
+_________________________________________________________________________________________*/
     
     /* MODULE FOR ANDROID GALLERY______________________________________*/
 	
@@ -145,8 +141,145 @@
         padding-top: 140px;
         padding-bottom:50px;
     }
-	/*______*/
+	/*_________________________________________________________
+___________________________________________________________________*/
+    
+    /*SECOND ITEM______________________________________________________
+_____________________________________________________________________*/
+    
+    #gallery2 {
+        position:absolute;
+        top: 50px;
+        display:inline-block;
+		/*margin-left: auto;
+        margin-right:auto;*/
+		
+	}
 	
+	/* SLIDING IMAGE GALLERY _______________________________________*/
+	
+    #outline2 {
+        position:absolute;
+        width: 600px;
+    }
+    
+    #container2 {
+        width: 203px;
+        height: 360px;
+        top: 84px;
+		left:68px;
+        position: absolute;
+        overflow: hidden;
+        background: rgb(255, 255, 255);
+    }
+    #slideshow2 {
+        height: 100%;
+        width: 100%;
+    }
+    #slideshow2 img {
+        height: 100%;
+        width: 100%;
+    }
+    #pager2 {
+        height: 120px;
+        width: 100%;
+        position: absolute;
+        bottom: 5%;
+        background: transparent;
+		z-index: 1000;
+        opacity: 0;
+        transition: all 0.3s ease-in-out 0s;
+		text-align: center;
+    }
+    #pager2:hover {
+       opacity: 1;
+    }
+	#pager2 img {
+		margin: 10px 5px;
+		opacity:0.3;
+		transition:all .3s ease-in-out 0s;
+		}
+	#pager2 img:hover {
+		opacity:1;
+		transform:scale(1.05);
+		z-index:100;
+		}
+	
+	/* INTERACTIVE FRAME______________________________________________*/
+	/**/
+	
+    #frame2 {
+		width: 315px;
+		height: 620px;
+		position: absolute;
+		left:10px;
+		top: 50px;
+	}
+	
+    #prev2 {
+		display:inline;
+        height: 120px;
+        width: 120px;
+		left: -85px;
+        top:205px;
+		
+        position: absolute;
+        margin: auto 10px;
+		 z-index: 3000;
+    }
+     #next2 {
+		 display: inline;
+        height: 120px;
+        width: 120px;
+		left: 280px;
+		top: 200px;
+        position: absolute;
+        margin: auto 10px;
+		z-index: 3000;
+    }
+	
+	/*________________________________________*/
+	
+    /* TEXT FOR IMAGE GRABBER */
+    
+    #image_grabber{
+        text-align: center;
+        position:relative; /* without this it goes funny*/
+        width: 100%;
+		height: 800px;
+	}
+    
+        #image_grabber_textbox { /* both the description and text*/
+            width: 500px;
+            margin: 0 auto; /* cannot text align divs to center them"*/
+            padding-right:700px;
+            padding-top:90px;
+            
+    }
+    
+    
+    #image_grabber_text {
+		
+	}
+	
+    #image_description {
+        padding-bottom: 40px;
+    }
+    
+    /* BATCH PICTURE */
+	#picture+gallery{
+        position:absolute;
+        top:0;
+		display:inline-block;
+		
+	}
+	
+    #picture_2 {
+		display:inline;
+        position:absolute;
+        top: 110px;
+        padding-left: 400px;
+    }
     </style>
 </head>
 
@@ -167,8 +300,8 @@
 <p>Source code can be found on <a href="http://www.github.com/saoasuna">my Github</a>.</p>
 </div>
 
-<!--side project 1, assignment tracker-->
-<div id="assignment_tracker">
+<!--side project 1, assignment tracker---------------------------------------------->
+<div id="assignment_tracker"> <!-- CENTERS EVERYTHING-->
 <h1 class="project_titles">Assignment Tracker
 </h1>
 
@@ -198,27 +331,67 @@
     </div>
     
     <div id="pager"></div>
-    </div    
-
-></div>
+    </div>
+    </div>
     <!-- -->
 
 </div>
-<div id="assignment_track_textbox"> <!-- container for formatting-->
+<div id="assignment_track_textbox"> <!-- container for formatting, empty container with no css properties-->
 <h2 class="project_descriptions" id="assignment_description">goodbye to missed deadlines
     </h2>
 <div id="assignment_tracker_text">
-<p>In hac habitasse platea dictumst. Fusce accumsan blandit eros. Integer euismod et nunc eu cursus. Vestibulum sagittis rutrum velit vel sagittis. Maecenas tempus porttitor elit, ac posuere libero varius quis. Nullam mi leo, condimentum eu erat id, ullamcorper feugiat odio. Integer quis dui molestie, lacinia orci sed, semper nisi. Aliquam nec efficitur nulla, a ornare tellus. Integer quis dui molestie, lacinia orci sed, semper nisi. Aliquam nec efficitur nulla, a ornare tellus. Integer quis dui molestie, lacinia orci sed, semper nisi. Aliquam nec efficitur nulla, a ornare tellus. Integer quis dui molestie, lacinia orci sed, semper nisi. Aliquam nec efficitur nulla, a ornare tellus. Inti molestie, lacinia orci sed, semper nisi. Aliquam nec efficitur nulla, a ornare tellus</p>
+<p>Assignment Tracker is an Android application that helps you stay on top of your work. Assignments are displayed using a RecyclerView and stored inside an SQLLiteDatabase. An AVL tree implementation offers quick sorting and allows checks for deadline conflicts. Users are able to share assignment files with one another over Wi-fi through Google’s Cloud Messaging API and Java Servlets. Notifications are pushed by the app whenever deadlines are approaching or another user is trying to share a file.<br><br>Java, SQL, XML, JSON<br>September 2015 - November 2015, personal project<br><br><a href="https://github.com/saoasuna/AssignmentTracker">View Code on Github</a></p>
 </div>
   </div>
 </div>
-<!--side project 2-->
-<div class="side_project">
-<h1 class="project_titles">Image Grabber
+<!--side project 2------------------------------------------------------------------------>
+    <div id="image_grabber">
+        <h1 class="project_titles">Image Grabber
 </h1>
-<p>In hac habitasse platea dictumst. Fusce accumsan blandit eros. Integer euismod et nunc eu cursus. Vestibulum sagittis rutrum velit vel sagittis. Maecenas tempus porttitor elit, ac posuere libero varius quis. Nullam mi leo, condimentum eu erat id, ullamcorper feugiat odio. Integer quis dui molestie, lacinia orci sed, semper nisi. Aliquam nec efficitur nulla, a ornare tellus.
-</p>
+    <div id="image_grabber_textbox">
+        <div  id="image_description">
+            <h2 class = "project_descriptions">fluid image viewing</h2></div>
+   <div id="image_grabber_text">
+<p>Image Grabber is an Android application that fetches and displays photos in a smooth, scrollable view. The app connects to Flickr and Booru imageboards using their respective API’s and downloads images according to the SearchView. It compares each photo’s resolution to the device’s screensize to determine the best display size of each picture. The AsyncTask class is used to download images in a background thread and update the UI when available. There is also a desktop script written in Ruby (using the Nokogiri gem) that allows users to batch download these pictures.<br><br>Java, Ruby, Nokogiri, SQL, XML, JSON<br>October 2015 - November 2015, personal project<br><br><a href="https://github.com/saoasuna/Image-Grabber">View Code on Github</a></p>
+             </div>
+    </div>
+        <div id="picture_2">
+        <img id="batch" src="img/batch435.png"></div>
+<div id="picture+gallery">
+
+<div id="gallery2">
+     <div id="outline2">
+    
+    <img id="prev2" src="img/prev1.svg"/>
+<div id="frame2">
+	<img src="img/frame435.png" alt="" />
 </div>
+<img id="next2" src="img/next1.svg"/>
+        <div id="container2">
+    <div id="slideshow2" class="cycle-slideshow"
+       data-cycle-fx = "scrollHorz"
+       data-cycle-speed = "600"
+       data-cycle-timeout = "3000"
+       data-cycle-pager = "#pager2"
+       data-cycle-pager-template ="<a href='#'><img src='{{src}}' height=100 width=51/>"
+       data-cycle-next = "#next2"
+       data-cycle-prev = "#prev2"
+       data-cycle-manual-fx = "scrollHorz"
+       data-cycle-manual-speed = "400"
+       data-cycle-pager-fx = "scrollHorz">
+        <img src="img/twowallpaper.jpg" alt="">
+        <img src="img/gridview.png" alt="">
+    </div>
+    
+    <div id="pager2"></div>
+    </div    
+
+></div>
+
+    </div>
+</div>
+       
+     </div>
 <!--side project 3-->
 <div class="side_project">
 <h1 class="project_titles">MaplePlay
