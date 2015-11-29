@@ -373,7 +373,29 @@ ________________________________________________________________________________
     #maple_description {
         padding-bottom: 40px;
     }
-
+    
+    /* DOODLE JUMP ____________________________________________________________________________________
+    _______________________________________________________________________________________*/
+     #doodlejump{
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+		height: 650px;
+	}
+    
+        #doodlejump_textbox { /* both the description and text*/
+            position:relative;
+            display:inline-block;
+            width: 500px;
+            padding-top:40px;
+           
+            
+    }
+    
+	
+    #doodle_description {
+        padding-bottom: 40px;
+    }
     </style>
 </head>
 
@@ -524,11 +546,16 @@ ________________________________________________________________________________
 </div>
 </div>
 <!--side project 4-->
-<div class="side_project">
+<div id="doodlejump">
 <h1 class="project_titles">DoodleJump Clone
 </h1>
-<p>In hac habitasse platea dictumst. Fusce accumsan blandit eros. Integer euismod et nunc eu cursus. Vestibulum sagittis rutrum velit vel sagittis. Maecenas tempus porttitor elit, ac posuere libero varius quis. Nullam mi leo, condimentum eu erat id, ullamcorper feugiat odio. Integer quis dui molestie, lacinia orci sed, semper nisi. Aliquam nec efficitur nulla, a ornare tellus.
+    
+    <div id="doodlejump_textbox">
+        <div  id="doodle_description">
+            <h2 class = "project_descriptions">and a little hardware...</h2></div>
+<p>Doodlejump Clone is an imitation of the popular mobile platforming game, built using the Tiva C Launchpad (microcontroller kit) and Orbit Booster Pack. Much like the original game, the character sprite is controlled through accelerometer input. The graphics are constantly being updated on the Orbit Booster Pack’s OLED screen, and high scores are saved to the EEPROM. A morse code translator has also been implemented through using UART and PuTTY. The onboard lights can be controlled with the potentiometer.<br><br>C, C++<br>September 2015 - December 2015, school group project<br><br><a href="https://github.com/saoasuna/DoodleJump-Clone">View Code on Github</a>
 </p>
+</div>
 </div>
 </body>
 </html>
