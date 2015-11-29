@@ -12,30 +12,47 @@
         padding: 0;
     }
 	
-	#interact {
-		position:absolute;
-		top: 200px;
-		left:157px;
-	}
-	div.center_text{
+	
+	
+	div.github_text{
+		position:relative;
 		padding-top:10px;
 		padding-right:5px;
 		text-align: right;
 	}
+    /*
 	div.text_cont{
 		padding-left: 100px;
 		padding-top:30px;
 		padding-right:30px;
 		
+	}*/
+    
+    /* MODULE FOR ANDROID GALLERY______________________________________*/
+	
+	#gallery {
+        display:inline-block;
+        padding-right:100px;
+		/*margin-left: auto;
+        margin-right:auto;*/
+		position:relative;
+
+        width:800px;
 	}
 	
+	/* SLIDING IMAGE GALLERY _______________________________________*/
 	
+    #outline {
+        position:relative;
+        width: 600px;
+    }
+    
     #container {
         width: 288px;
         height: 512px;
-        position: relative;
-		left:315px;
-		top: 88px;
+        top: 93px;
+		left:23px;
+        position: absolute;
         overflow: hidden;
         background: rgb(255, 255, 255);
     }
@@ -71,48 +88,63 @@
 		transform:scale(1.05);
 		z-index:100;
 		}
+	
+	/* INTERACTIVE FRAME______________________________________________*/
+	/**/
+	
     #frame {
-		position: relative;
-		display: inline;
-		
+		width: 315px;
+		height: 620px;
+		position: absolute;
+		left:10px;
+		top: 50px;
 	}
 	
     #prev {
 		display:inline;
         height: 120px;
         width: 120px;
-        position: relative;
-        vertical-align: top;
-        top: 250px;
-        bottom: 0;
-        left:0;
+		left: -145px;
+        top:275px;
+		
+        position: absolute;
         margin: auto 10px;
-		 z-index: 1000;
+		 z-index: 3000;
     }
      #next {
 		 display: inline;
         height: 120px;
         width: 120px;
-        position: relative;
-		vertical-align: top;
-        top: 245px;
-        right:0;
+		left: 330px;
+		top: 270px;
+        position: absolute;
         margin: auto 10px;
-		z-index: 1000;
+		z-index: 3000;
     }
 	
-	div.assignment_tracker_text {
-		position:absolute;
-		width: 900px;
-		left: 700px;
-		top: 200px;
+	/*________________________________________*/
+	
+    /* TEXT FOR ASSIGNMENT_TRACKER */
+    
+	#assignment_tracker_text {
+        display:inline-block;
+        width:400px;
+        padding-left: 450px;
 		
 	}
 	
-	div.assignment_tracker{
-		padding-bottom: 200px;	
+	#assignment_tracker{
+        text-align: center;
+        width: 100%;
+		height: 800px;
 	}
-	
+    
+    #assignment_description {
+        padding-left: 450px;
+        padding-top: 140px;
+        padding-bottom:50px;
+    }
+	/*______*/
 	
     </style>
 </head>
@@ -130,19 +162,26 @@
 </div>
 </div>
 </header>
-<div class="center_text">
+<div class="github_text">
 <p>Source code can be found on <a href="http://www.github.com/saoasuna">my Github</a>.</p>
 </div>
 
 <!--side project 1, assignment tracker-->
-<div class="assignment_tracker">
-<div class="side_project">
+<div id="assignment_tracker">
 <h1 class="project_titles">Assignment Tracker
 </h1>
 
-<div id="container">
+<div id="gallery">
+    <div id="outline">
+    
+    <img id="prev" src="img/prev1.svg"/>
+<div id="frame">
+	<img src="img/frame315.png" alt="" />
+</div>
+<img id="next" src="img/next1.svg"/>
+        <div id="container">
     <div id="slideshow" class="cycle-slideshow"
-       data-cycle-fx = "fade"
+       data-cycle-fx = "scrollHorz"
        data-cycle-speed = "600"
        data-cycle-timeout = "3000"
        data-cycle-pager = "#pager"
@@ -158,20 +197,19 @@
     </div>
     
     <div id="pager"></div>
+    </div    
+
+></div>
+    <!-- -->
+
 </div>
-<div id="interact">
-<img id="prev" src="img/prev1.svg"/>
-<div id="frame">
-	<img src="img/frame315.png" alt="" />
+<div id="assignment_track_textbox"> <!-- container for formatting-->
+<h2 class="project_descriptions" id="assignment_description">goodbye to missed deadlines
+    </h2>
+<div id="assignment_tracker_text">
+<p>In hac habitasse platea dictumst. Fusce accumsan blandit eros. Integer euismod et nunc eu cursus. Vestibulum sagittis rutrum velit vel sagittis. Maecenas tempus porttitor elit, ac posuere libero varius quis. Nullam mi leo, condimentum eu erat id, ullamcorper feugiat odio. Integer quis dui molestie, lacinia orci sed, semper nisi. Aliquam nec efficitur nulla, a ornare tellus. Integer quis dui molestie, lacinia orci sed, semper nisi. Aliquam nec efficitur nulla, a ornare tellus. Integer quis dui molestie, lacinia orci sed, semper nisi. Aliquam nec efficitur nulla, a ornare tellus. Integer quis dui molestie, lacinia orci sed, semper nisi. Aliquam nec efficitur nulla, a ornare tellus. Inti molestie, lacinia orci sed, semper nisi. Aliquam nec efficitur nulla, a ornare tellus</p>
 </div>
-<img id="next" src="img/next1.svg"/>
-</div>
-<div class="assignment_tracker_text">
-<div class="text_cont">
-<p>In hac habitasse platea dictumst. Fusce accumsan blandit eros. Integer euismod et nunc eu cursus. Vestibulum sagittis rutrum velit vel sagittis. Maecenas tempus porttitor elit, ac posuere libero varius quis. Nullam mi leo, condimentum eu erat id, ullamcorper feugiat odio. Integer quis dui molestie, lacinia orci sed, semper nisi. Aliquam nec efficitur nulla, a ornare tellus.</p>
-</div>
-</div>
-</div>
+  </div>
 </div>
 <!--side project 2-->
 <div class="side_project">

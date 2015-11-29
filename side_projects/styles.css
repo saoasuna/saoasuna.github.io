@@ -17,6 +17,10 @@
 	font-family: 'quicksandregular';
 	src:url('fonts/quicksand-regular.otf');}
 	
+@font-face{
+	font-family: 'quicksandlightitalic';
+	src:url('fonts/quicksand-lightitalic.otf');}
+	
 header{
 	font-family: gothambook, Times New Roman;
 	font-size: 24px;}
@@ -28,6 +32,11 @@ h1.project_titles{
 	font-weight:normal;
 	color:rgb(226, 118, 75);
 	text-align:center;}
+h2.project_descriptions{
+	font-family:quicksandlightitalic, Times New Roman;
+	font-size:32px;
+	font-weight:normal;
+}
 
 nav {
 	text-align:right;}
@@ -54,5 +63,6 @@ body {background-color: rgb(255, 255, 255);}
 /***************************/
 
 header{
-	padding:30px;}
+	padding:30px;
+	width:100%;}
 	
