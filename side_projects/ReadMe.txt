@@ -1,0 +1,1 @@
+responsiveDesktop is default.
