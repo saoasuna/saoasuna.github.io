@@ -10,6 +10,10 @@ body {
     
 }
 
+#image_grabber {
+    top:40px;
+}
+
 #picture_2{
     display:none;
 }
