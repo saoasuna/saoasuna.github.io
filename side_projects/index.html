@@ -28,20 +28,16 @@ ________________________________________________________________________________
 	
 	#gallery {
         display:inline-block;
-        padding-right:100px;
+        height:512px;
+        width:512px;
 		/*margin-left: auto;
         margin-right:auto;*/
 		position:relative;
 
-        width:800px;
 	}
 	
 	/* SLIDING IMAGE GALLERY _______________________________________*/
 	
-    #outline {
-        position:relative;
-        width: 600px;
-    }
     
     #container {
         width: 288px;
@@ -111,7 +107,7 @@ ________________________________________________________________________________
 		 display: inline;
         height: 120px;
         width: 120px;
-		left: 330px;
+        left: 330px;
 		top: 270px;
         position: absolute;
         margin: auto 10px;
@@ -122,23 +118,28 @@ ________________________________________________________________________________
 	
     /* TEXT FOR ASSIGNMENT_TRACKER */
     
-	#assignment_tracker_text {
-        display:inline-block;
-        width:400px;
-        padding-left: 450px;
-		
-	}
-	
-	#assignment_tracker{
+    #assignment_tracker{
         text-align: center;
         width: 100%;
 		height: 800px;
 	}
     
+    #assignment_alltext {
+        display:inline-block;
+        height: 512px;
+    }
+    
+	#assignment_tracker_text {
+        width:400px;
+        margin-left: auto;
+        margin-right: auto;
+		
+	}
+
+    
     #assignment_description {
-        padding-left: 450px;
-        padding-top: 140px;
-        padding-bottom:50px;
+         margin-left: auto;
+        margin-right: auto;
     }
 	/*_________________________________________________________
 ___________________________________________________________________*/
@@ -422,7 +423,6 @@ ________________________________________________________________________________
 </h1>
 
 <div id="gallery">
-    <div id="outline">
     
     <img id="prev" src="img/prev1.svg"/>
 <div id="frame">
@@ -448,15 +448,15 @@ ________________________________________________________________________________
     
     <div id="pager"></div>
     </div>
-    </div>
     <!-- -->
 
 </div>
-<div id="assignment_track_textbox"> <!-- container for formatting, empty container with no css properties-->
+<div id="assignment_alltext">
+
 <h2 class="project_descriptions" id="assignment_description">goodbye to missed deadlines
     </h2>
 <div id="assignment_tracker_text">
-<p>Assignment Tracker is an Android application that helps you stay on top of your work. Assignments are displayed using a RecyclerView and stored inside an SQLLiteDatabase. An AVL tree implementation offers quick sorting and allows checks for deadline conflicts. Users are able to share assignment files with one another over Wi-fi through Google’s Cloud Messaging API and Java Servlets. Notifications are pushed by the app whenever deadlines are approaching or another user is trying to share a file.<br><br>Java, SQL, XML, JSON<br>September 2015 - November 2015, personal project<br><br><a href="https://github.com/saoasuna/AssignmentTracker">View Code on Github</a></p>
+<p><br>Assignment Tracker is an Android application that helps you stay on top of your work. Assignments are displayed using a RecyclerView and stored inside an SQLLiteDatabase. An AVL tree implementation offers quick sorting and allows checks for deadline conflicts. Users are able to share assignment files with one another over Wi-fi through Google’s Cloud Messaging API and Java Servlets. Notifications are pushed by the app whenever deadlines are approaching or another user is trying to share a file.<br><br>Java, SQL, XML, JSON<br>September 2015 - November 2015, personal project<br><br><a href="https://github.com/saoasuna/AssignmentTracker">View Code on Github</a></p>
 </div>
   </div>
 </div>
